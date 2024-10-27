@@ -1,0 +1,145 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.login {
+    height: 100vh;
+
+}
+
+.header h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.login-form input {
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-form a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+    margin: 20px 0;
+    display: block;
+}
+
+.login-form .signin {
+    width: 100%;
+    height: 42px;
+    background: #000000;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.login-form .signin-google {
+    width: 100%;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px 0 20px 0;
+}
+
+.login-form span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+}
+
+.login-form span a {
+    font-weight: 600;
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+  }
+  
+  .overlay-text h2,
+  .overlay-text p {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }.carousel-caption-top {
+    position: absolute;
+    top: 20px; /* Mengatur jarak dari atas */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .carousel-caption-top h2,
+  .carousel-caption-top p {
+    color: white;
+    margin: 0;
+  }
+
+  
+ 
+
+/*style dashboard*/
+
+  /* Gaya untuk memastikan teks navbar terlihat jelas */
+  .navbar .nav-link {
+
+    color: white; /* Mengatur warna teks menjadi putih */
+
+  }
+
+  /* Gaya untuk teks dashboard */
+  .navbar .navbar-text {
+    margin-right: auto;
+    color: white; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+
+  }
+
+ 
+/* style.css */
+
+
+
+
+
+
+

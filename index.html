@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login & Register</title>
+  </head>
+
+  <body>
+    <section class="login d-flex">
+      <div class="login-right w-50 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-6">
+            <!-- Login Form -->
+            <div id="loginForm">
+              <div class="header">
+                <h1>Login</h1>
+                <p>Welcome back! please enter your details.</p>
+              </div>
+
+              <div class="login-form">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+                <a href="#" class="text-decoration-none text-center"
+                  >Forgot password?</a
+                >
+                <button class="signin" onclick="redirectToDashboard()">
+                  Login
+                </button>
+
+                <button class="signin-google">
+                  <img src="image/google-logo.png" alt="" />
+                  Sign In With Google
+                </button>
+                <div class="text-center">
+                  <span class="d-inline"
+                    >Don’t have an account?
+                    <button
+                      class="btn btn-link p-0"
+                      onclick="showRegisterForm()"
+                    >
+                      Register
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="registerForm" style="display: none">
+              <div class="header">
+                <h1>Register</h1>
+                <p>Create a new account by entering your details below.</p>
+              </div>
+
+              <div class="login-form">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  placeholder="Enter your email"
+                />
+
+                <label for="registerPassword" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  placeholder="Enter your password"
+                />
+
+                <label for="confirmPassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  placeholder="Confirm your password"
+                />
+
+                <button class="signin mt-3" onclick="registerUser()">
+                  Register
+                </button>
+                <div
+                  class="alert alert-success"
+                  id="registerSuccessMessage"
+                  style="display: none"
+                >
+                  Successful registration, please login.
+                </div>
+
+                <div class="text-center mt-3">
+                  <span class="d-inline"
+                    >Already have an account?
+                    <button class="btn btn-link p-0" onclick="showLoginForm()">
+                      Login
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--overlay-->
+      <div class="login-left w-50 h-100">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="image/background3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+
+              <div class="carousel-caption-top">
+                <h2>Welcome to our website</h2>
+                <p>By Ikhsan</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/bg4.jpg" class="d-block w-100" alt="..." />
+
+              <div class="carousel-caption-top">
+                <h2>About</h2>
+                <p>
+                  Disini kami menyediakan form login/register, jika sudah
+                  register dan login, maka akan masuk ke menu dashboard
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/bg7.png" class="d-block w-100" alt="..." />
+
+              <div class="carousel-caption-top">
+                <h2>Countact</h2>
+                <a
+                  href="https://www.instagram.com/ikhsanmhh_"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  IG: ikhsanmhh_
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript Forms -->
+    <script>
+      function showRegisterForm() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("registerForm").style.display = "block";
+      }
+
+      function showLoginForm() {
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("registerForm").style.display = "none";
+      }
+
+      function redirectToDashboard() {
+        // Arahkan ke halaman dashboard
+        window.location.href = "dashboard.html";
+      }
+
+      function showRegisterForm() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("registerForm").style.display = "block";
+        document.getElementById("registerSuccessMessage").style.display =
+          "none";
+      }
+
+      function showLoginForm() {
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("registerForm").style.display = "none";
+      }
+
+      function showRegisterSuccessMessage() {
+        // Tampilkan pesan berhasil register
+        document.getElementById("registerSuccessMessage").style.display =
+          "block";
+
+        setTimeout(() => {
+          showLoginForm();
+          document.getElementById("registerSuccessMessage").style.display =
+            "none";
+        }, 3000);
+      }
+
+      function registerUser() {
+        // Logika register di sini
+        showRegisterSuccessMessage();
+      }
+    </script>
+  </body>
+</html>
