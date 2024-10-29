@@ -98,7 +98,7 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }.carousel-caption-top {
     position: absolute;
-    top: 20px; /* Mengatur jarak dari atas */
+    top: 20px; 
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -118,14 +118,13 @@
 
 /*style dashboard*/
 
-  /* Gaya untuk memastikan teks navbar terlihat jelas */
+ 
   .navbar .nav-link {
 
-    color: white; /* Mengatur warna teks menjadi putih */
-
+    color: white; 
   }
 
-  /* Gaya untuk teks dashboard */
+  
   .navbar .navbar-text {
     margin-right: auto;
     color: white; 
@@ -135,7 +134,7 @@
   }
 
  
-/* style.css */
+
 
 
 
